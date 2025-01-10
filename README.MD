@@ -83,7 +83,7 @@ Here are some improvements that could be made, leveraging cloud technologies, in
 
 **Storage**
 - A cloud-native distributed database such as CockroachDB which uses the raft consensus algorithm for strong consistency
-- Node-based horizontal scaling, automated fallover, partion by merchant ID etc.
+- Node-based horizontal scaling, automated fallover, partition by merchant ID, ACID compliance etc.
 - Acts as our source of truth table from which we can derive other data sources/actions
 
 **Event Store**
