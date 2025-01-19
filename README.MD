@@ -77,9 +77,9 @@ Here are some improvements that could be made, leveraging cloud technologies, in
 - Data access, payment history + access, aggregated reports/dashboards
 
 **Payments**
-- Handle long pending payments
-- Handle retries 
--  Idempotency key prevents duplicate payments
+- Accurate payment status management
+- Handle retries with expotential backoff
+- Idempotency key prevents duplicate payments
 
 **Storage**
 - A cloud-native distributed database such as CockroachDB which uses the raft consensus algorithm for strong consistency
@@ -89,3 +89,4 @@ Here are some improvements that could be made, leveraging cloud technologies, in
 **Event Store**
 - Can use Kafka to track changes and create an audit trail
 - Supports multiple consumers reading from same source e.g. Analytics service
+- Loose coupling means we can easily add more integrations in the future
